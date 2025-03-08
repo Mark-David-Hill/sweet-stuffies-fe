@@ -34,3 +34,11 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .navbar-container {
+    .navbar-main {
+      display: none;
+    }
+  }
+}

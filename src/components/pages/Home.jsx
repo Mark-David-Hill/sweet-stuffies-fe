@@ -9,11 +9,13 @@ function Home() {
     <div className="home-container">
       <Navbar />
       <div className="section-1">
-        <div class="image-banner">
+        <div class="scented-specials-1">
           <div class="overlay-text">SCENTED SPECIALS</div>
         </div>
-        <img className="scented-special-2" src={scentedSpecial2} alt="" />
-        <button>Buy Now</button>
+        <div className="scented-specials-2">
+          <img src={scentedSpecial2} alt="" />
+          <button>Buy Now</button>
+        </div>
       </div>
     </div>
   );

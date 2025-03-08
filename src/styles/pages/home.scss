@@ -7,44 +7,126 @@
   background-image: url("../assets/pinwheel-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: center top -20vw;
   min-height: 100vh;
   width: 100vw;
 
-  .ad,
-  .section {
-    width: 90%;
-    height: 200px;
-  }
+  .section-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 30px;
 
-  .ad {
-    background-color: rgb(121, 121, 248);
-  }
+    .scented-specials-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 600px;
+      background: url("../assets/alpaca-front.jpg") center/cover no-repeat;
+      position: relative;
 
-  .section {
-    background-color: rgb(243, 197, 90);
+      .overlay-text {
+        width: 200px;
+        line-height: 70px;
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        position: relative;
+      }
+    }
+
+    .scented-specials-2 {
+      align-self: center;
+      width: 300px;
+
+      img {
+        width: 300px;
+      }
+
+      button {
+        position: relative;
+        left: 90px;
+        bottom: 80px;
+        width: 115px;
+        height: 60px;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 30px;
+      }
+    }
   }
 }
 
-.scented-special-2 {
-  width: 200px;
+@media (max-width: 830px) {
+  .home-container {
+    .section-1 {
+      flex-direction: column;
+      align-items: center;
+
+      .scented-specials-1 {
+        width: 300px;
+        height: 500px;
+        position: relative;
+        right: 10%;
+
+        .overlay-text {
+        }
+      }
+
+      .scented-specials-2 {
+        width: 200px;
+        z-index: 1;
+        img {
+          width: 200px;
+          position: relative;
+          left: 50%;
+          bottom: 100px;
+        }
+
+        button {
+          left: -25vw;
+          bottom: 170px;
+          width: 35vw;
+        }
+      }
+    }
+  }
 }
 
-.image-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
-  background: url("../assets/alpaca-front.jpg") center/cover no-repeat;
-  position: relative;
+@media (max-width: 400px) {
+  .home-container {
+    .section-1 {
+      .scented-specials-1 {
+        width: 200px;
+        height: 400px;
 
-  .overlay-text {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 5px;
+        // .overlay-text {
+        // }
+      }
+
+      .scented-specials-2 {
+        width: 130px;
+        z-index: 1;
+        img {
+          width: 130px;
+          position: relative;
+          left: 50%;
+          bottom: 100px;
+        }
+
+        button {
+          width: 120px;
+          left: -70px;
+          bottom: 170px;
+          // width: 20vw;
+        }
+      }
+    }
   }
 }
