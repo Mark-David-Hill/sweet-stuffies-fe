@@ -1,0 +1,50 @@
+.home-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-image: url("../assets/pinwheel-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  width: 100vw;
+
+  .ad,
+  .section {
+    width: 90%;
+    height: 200px;
+  }
+
+  .ad {
+    background-color: rgb(121, 121, 248);
+  }
+
+  .section {
+    background-color: rgb(243, 197, 90);
+  }
+}
+
+.scented-special-2 {
+  width: 200px;
+}
+
+.image-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: url("../assets/alpaca-front.jpg") center/cover no-repeat;
+  position: relative;
+
+  .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
