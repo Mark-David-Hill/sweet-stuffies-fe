@@ -3,14 +3,16 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  font-family: sans-serif;
 }
 
 .app-container {
   background-image: url("../assets/pinwheel-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw;
   background-size: cover;
-  background-position: center top -400px;
+  // background-position: center top -400px;
+  min-height: 100vh;
+  width: 100vw;
 
   .navbar {
     display: flex;
@@ -71,3 +73,33 @@ body {
     }
   }
 }
+
+.scented-special-2 {
+  width: 200px;
+}
+
+.image-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px; // Adjust as needed
+  background: url("../assets/alpaca-front.jpg") center/cover no-repeat;
+  position: relative;
+
+  .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+// @media (max-width: 768px) {
+//   .app-container {
+//     background-size: 100% 100%; /* Ensures full width coverage on small screens */
+//     background-attachment: scroll; /* Prevents fixed background issues */
+//   }
+// }
