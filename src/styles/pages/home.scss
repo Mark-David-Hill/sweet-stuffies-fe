@@ -29,7 +29,7 @@
 
       .overlay-text {
         width: 200px;
-        line-height: 70px;
+        line-height: 50px;
         color: white;
         font-size: 32px;
         font-weight: bold;
@@ -37,6 +37,7 @@
         padding: 10px 20px;
         border-radius: 5px;
         position: relative;
+        top: 220px;
       }
     }
 
@@ -76,6 +77,8 @@
         right: 10%;
 
         .overlay-text {
+          font-size: 26px;
+          top: -170px;
         }
       }
 
@@ -106,8 +109,11 @@
         width: 200px;
         height: 400px;
 
-        // .overlay-text {
-        // }
+        .overlay-text {
+          font-size: 20px;
+          line-height: 40px;
+          top: -150px;
+        }
       }
 
       .scented-specials-2 {
@@ -124,7 +130,6 @@
           width: 120px;
           left: -70px;
           bottom: 170px;
-          // width: 20vw;
         }
       }
     }
