@@ -7,12 +7,19 @@ import appleCinnamon from "../../assets/apple-cinnamon.jpg";
 import birthdayCake from "../../assets/birthday-cake.jpg";
 
 function Home() {
+  const section2Items = [
+    { imageSrc: chocolateChipCookies, label: "CHOCOLATE CHIP COOKIES" },
+    { imageSrc: appleCinnamon, label: "APPLE CINNAMON PIE" },
+    { imageSrc: blueberryMuffins, label: "BLUEBERRY MUFFINS" },
+    { imageSrc: birthdayCake, label: "BIRTHDAY CAKE" },
+  ];
+
   return (
     <div className="home-container">
       <Navbar />
       <div className="section-1">
-        <div class="scented-specials-1 text-overlay-section">
-          <div class="overlay-text">SCENTED SPECIALS</div>
+        <div className="scented-specials-1 text-overlay-section">
+          <div className="overlay-text">SCENTED SPECIALS</div>
         </div>
         <div className="scented-specials-2">
           <img src={scentedSpecial2} alt="" />
@@ -20,13 +27,14 @@ function Home() {
         </div>
       </div>
       <div className="section-2">
-        {/* <div class=".text-overlay-section choco-chip">
-          <div class="overlay-text">CHOCOLATE CHIP COOKIES</div>
-        </div> */}
-        <img src={chocolateChipCookies} alt="Chocolate Chip Cookies" />
-        <img src={appleCinnamon} alt="Apple Cinnamon Pie" />
-        <img src={blueberryMuffins} alt="Blueberry Muffins" />
-        <img src={birthdayCake} alt="Birthday Cake" />
+        {section2Items.map((item) => (
+          <div key={item.label} className="image-container">
+            <img src={item.imageSrc} alt={item.label} />
+            <div className="overlay">
+              <div className="overlay-text">{item.label}</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
