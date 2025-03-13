@@ -36,6 +36,7 @@ function Home() {
           </div>
         ))}
       </div>
+      <div class="wavy-line"></div>
     </div>
   );
 }
