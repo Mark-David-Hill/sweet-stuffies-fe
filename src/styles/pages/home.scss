@@ -2,7 +2,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
   background-image: url("../assets/pinwheel-background.jpg");
   background-repeat: no-repeat;
@@ -173,6 +172,24 @@
         &:hover {
           visibility: visible;
         }
+      }
+    }
+  }
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+
+    .images-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        width: 200px;
       }
     }
   }

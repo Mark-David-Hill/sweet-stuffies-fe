@@ -5,6 +5,9 @@ import blueberryMuffins from "../../assets/blueberry-muffins.jpg";
 import scentedSpecial2 from "../../assets/capybara-front.jpg";
 import appleCinnamon from "../../assets/apple-cinnamon.jpg";
 import birthdayCake from "../../assets/birthday-cake.jpg";
+import blueYoshi from "../../assets/blue-yoshi-1.jpg";
+import unicorn from "../../assets/unicorn.jpg";
+import koroks from "../../assets/koroks.jpg";
 
 function Home() {
   const section2Items = [
@@ -37,6 +40,15 @@ function Home() {
         ))}
       </div>
       <div class="wavy-line"></div>
+      <div className="section-3">
+        <h2>Shop the designs with raving reviews:</h2>
+        <div className="images-wrapper">
+          <img src={blueYoshi} alt="Blue Yoshi Plushie" />
+          <img src={koroks} alt="Korok Plushies" />
+          <img src={unicorn} alt="Unicorn Plushie" />
+        </div>
+      </div>
+      <hr />
     </div>
   );
 }
