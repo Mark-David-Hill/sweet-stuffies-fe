@@ -38,8 +38,8 @@ function Home() {
             </div>
           </div>
         ))}
+        <div class="wavy-line"></div>
       </div>
-      <div class="wavy-line"></div>
       <div className="section-3">
         <h2>Shop the designs with raving reviews:</h2>
         <div className="images-wrapper">
