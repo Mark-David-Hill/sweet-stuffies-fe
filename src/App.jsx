@@ -1,11 +1,13 @@
 import "./styles/main.scss";
 
-import Home from "./components/pages/Home";
+import LandingPage from "./components/pages/LandingPage";
+// import Home from "./components/pages/Home";
 
 function App() {
   return (
     <div className="app-container">
-      <Home />
+      <LandingPage />
+      {/* <Home /> */}
     </div>
   );
 }
