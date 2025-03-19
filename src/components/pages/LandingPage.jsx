@@ -16,15 +16,17 @@ function LandingPage() {
   return (
     <div className="landing-page-container">
       <div className="heading-section-container">
-        <div className="image-heading-wrapper">
-          <img src={logo} alt="" />
+        <div className="heading-overlay">
+          <div className="image-heading-wrapper">
+            <img src={logo} alt="" />
 
-          <div className="heading-wrapper">
-            <h1>Sweet Stuffies</h1>
-            <h2>Cute. Cuddly. Uniquely Yours.</h2>
+            <div className="heading-wrapper">
+              <h1>Sweet Stuffies</h1>
+              <h2>Cute. Cuddly. Uniquely Yours.</h2>
+              <h3>Handmade custom stuffies made in Eagle Mountain, Utah.</h3>
+            </div>
           </div>
         </div>
-        <h3>Handmade custom stuffies made in Eagle Mountain, Utah.</h3>
       </div>
     </div>
   );
