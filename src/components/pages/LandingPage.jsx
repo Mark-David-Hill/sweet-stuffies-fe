@@ -1,5 +1,7 @@
 import Navbar from "../navigation/Navbar";
 
+import Slideshow from "../features/Slideshow";
+
 import chocolateChipCookies from "../../assets/chocolate-chip-cookies.jpg";
 import stuffiesCollection from "../../assets/stuffies-collection.jpg";
 import blueberryMuffins from "../../assets/blueberry-muffins.jpg";
@@ -28,6 +30,14 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      <Slideshow />
+      {/* <div className="slideshow-container">
+        <div className="slides">
+          <img src={teddyBear} alt="" />
+          <img src={unicorn} alt="" />
+          <img src={koroks} alt="" />
+        </div>
+      </div> */}
     </div>
   );
 }
