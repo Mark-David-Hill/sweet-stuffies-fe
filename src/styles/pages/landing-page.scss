@@ -50,13 +50,16 @@
 
   .slideshow-container {
     position: relative;
-    max-width: 600px;
+    bottom: 650px;
+    max-width: 400px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
   }
 
   .slides {
+    // height: 20px;
+    // height: 500px;
     display: flex;
     transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
     // width: 300%; /* Adjust based on number of images */
