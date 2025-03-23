@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
-import chocolateChipCookies from "../../assets/chocolate-chip-cookies.jpg";
-import stuffiesCollection from "../../assets/stuffies-collection.jpg";
-import blueberryMuffins from "../../assets/blueberry-muffins.jpg";
+// import chocolateChipCookies from "../../assets/chocolate-chip-cookies.jpg";
+// import stuffiesCollection from "../../assets/stuffies-collection.jpg";
+// import blueberryMuffins from "../../assets/blueberry-muffins.jpg";
 
-const images = [
-  chocolateChipCookies,
-  stuffiesCollection,
-  blueberryMuffins,
-  chocolateChipCookies,
-  stuffiesCollection,
-  blueberryMuffins,
-];
+// const images = [
+//   chocolateChipCookies,
+//   stuffiesCollection,
+//   blueberryMuffins,
+//   chocolateChipCookies,
+//   stuffiesCollection,
+//   blueberryMuffins,
+// ];
 
-function Slideshow() {
+function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
