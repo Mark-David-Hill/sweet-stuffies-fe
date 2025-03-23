@@ -104,4 +104,26 @@
     width: 100%;
     flex: 0 0 100%; /* Ensures each image takes full width */
   }
+
+  main {
+    position: relative;
+    bottom: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-button-wrapper {
+    }
+
+    .process-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .delivery-img {
+      width: 80%;
+    }
+  }
 }
