@@ -78,7 +78,17 @@ function LandingPage() {
           </div>
         </div>
         <div className="calendly-wrapper">
-          <h2>Calendly Section</h2>
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/sweet-stuffies-em/30min?primary_color=3bb517"
+            data-resize="true"
+            // style="min-width:320px;height:700px;"
+          ></div>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
         </div>
         <div className="end-section">
           <h2>Questions? Concerns? Contact me at:</h2>
