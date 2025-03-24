@@ -1,4 +1,4 @@
-import Navbar from "../navigation/Navbar";
+import { useRef } from "react";
 
 import Slideshow from "../features/Slideshow";
 
@@ -16,6 +16,14 @@ import s1i10 from "../../assets/landing-page/slideshow-1/s1i10.jpg";
 import logo from "../../assets/logo.svg";
 
 function LandingPage() {
+  const calendlyRef = useRef(null);
+
+  const scrollToCalendly = () => {
+    if (calendlyRef.current) {
+      calendlyRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="landing-page-container">
       <div className="heading-section-container">
@@ -36,8 +44,8 @@ function LandingPage() {
           <img src={s1i6} alt="" /> */}
           <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
         </div>
-        <div className="contact-button-wrapper">
-          <button>Book Your Free Consultation With Me Today!</button>
+        <div className="contact-button-wrapper" onClick={scrollToCalendly}>
+          <button>Book Your Free Design Consult With Me Today!</button>
         </div>
       </div>
 
@@ -52,7 +60,9 @@ function LandingPage() {
             <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
           </div>
           <div className="contact-button-wrapper">
-            <button>Book Your Free Consultation With Me Today!</button>
+            <button onClick={scrollToCalendly}>
+              Book Your Free Design Consult With Me Today!
+            </button>
           </div>
           <div className="step-wrapper">
             <h3>Step 2: Creation</h3>
@@ -62,7 +72,9 @@ function LandingPage() {
             <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
           </div>
           <div className="contact-button-wrapper">
-            <button>Book Your Free Consultation With Me Today!</button>
+            <button onClick={scrollToCalendly}>
+              Book Your Free Design Consult With Me Today!
+            </button>
           </div>
           <div className="step-wrapper">
             <h3>Step 3: Elation</h3>
@@ -74,15 +86,17 @@ function LandingPage() {
             alt="Delivery Stock photos by Vecteezy"
           />
           <div className="contact-button-wrapper">
-            <button>Book Your Free Design Consult With Me Today!</button>
+            <button onClick={scrollToCalendly}>
+              Book Your Free Design Consult With Me Today!
+            </button>
           </div>
         </div>
-        <div className="calendly-wrapper">
+        <div className="calendly-wrapper" ref={calendlyRef}>
           <div
+            id="calendly"
             className="calendly-inline-widget"
             data-url="https://calendly.com/sweet-stuffies-em/30min?primary_color=3bb517"
             data-resize="true"
-            // style="min-width:320px;height:700px;"
           ></div>
           <script
             type="text/javascript"
