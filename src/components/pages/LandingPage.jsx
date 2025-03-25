@@ -2,17 +2,19 @@ import { useRef } from "react";
 
 import Slideshow from "../features/Slideshow";
 
-import deliveryImg from "../../assets/landing-page/delivery.jpg";
-import s1i1 from "../../assets/landing-page/slideshow-1/s1i1.jpg";
-import s1i2 from "../../assets/landing-page/slideshow-1/s1i2.jpg";
-import s1i3 from "../../assets/landing-page/slideshow-1/s1i3.jpg";
-import s1i4 from "../../assets/landing-page/slideshow-1/s1i4.jpg";
-import s1i5 from "../../assets/landing-page/slideshow-1/s1i5.jpg";
-import s1i6 from "../../assets/landing-page/slideshow-1/s1i6.jpg";
-import s1i7 from "../../assets/landing-page/slideshow-1/s1i7.jpg";
-import s1i8 from "../../assets/landing-page/slideshow-1/s1i8.jpg";
-import s1i9 from "../../assets/landing-page/slideshow-1/s1i9.jpg";
-import s1i10 from "../../assets/landing-page/slideshow-1/s1i10.jpg";
+import s1i1 from "../../assets/landing-page/slideshow-1/s1i1.png";
+import s1i2 from "../../assets/landing-page/slideshow-1/s1i2.png";
+import s1i3 from "../../assets/landing-page/slideshow-1/s1i3.png";
+import s1i4 from "../../assets/landing-page/slideshow-1/s1i4.png";
+import s1i5 from "../../assets/landing-page/slideshow-1/s1i5.png";
+import s2i1 from "../../assets/landing-page/slideshow-2/s2i1.png";
+import s2i2 from "../../assets/landing-page/slideshow-2/s2i2.png";
+import s2i3 from "../../assets/landing-page/slideshow-2/s2i3.png";
+import s2i4 from "../../assets/landing-page/slideshow-2/s2i4.png";
+import s3i1 from "../../assets/landing-page/slideshow-3/s3i1.png";
+import s3i2 from "../../assets/landing-page/slideshow-3/s3i2.png";
+import s3i3 from "../../assets/landing-page/slideshow-3/s3i3.png";
+import deliveryImg from "../../assets/landing-page/delivery.png";
 import logo from "../../assets/logo.svg";
 
 function LandingPage() {
@@ -42,7 +44,7 @@ function LandingPage() {
           {/* <img src={s1i1} alt="" />
           <img src={s1i5} alt="" />
           <img src={s1i6} alt="" /> */}
-          <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
+          <Slideshow images={[s1i1, s1i2, s1i3, s1i4, s1i5]} />
         </div>
         <div className="contact-button-wrapper" onClick={scrollToCalendly}>
           <button>Book Your Free Design Consult With Me Today!</button>
@@ -57,7 +59,7 @@ function LandingPage() {
             <p>See what I can do, tell me what you want</p>
           </div>
           <div className="slideshow-1-wrapper">
-            <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
+            <Slideshow images={[s2i1, s2i2, s2i3, s2i4]} />
           </div>
           <div className="contact-button-wrapper">
             <button onClick={scrollToCalendly}>
@@ -69,7 +71,7 @@ function LandingPage() {
             <p>I work my magic</p>
           </div>
           <div className="slideshow-1-wrapper">
-            <Slideshow images={[s1i2, s1i3, s1i4, s1i7, s1i8, s1i9, s1i10]} />
+            <Slideshow images={[s3i1, s3i2, s3i3]} />
           </div>
           <div className="contact-button-wrapper">
             <button onClick={scrollToCalendly}>
