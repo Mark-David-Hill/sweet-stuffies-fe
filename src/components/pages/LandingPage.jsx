@@ -21,9 +21,10 @@ function LandingPage() {
   const calendlyRef = useRef(null);
 
   const scrollToCalendly = () => {
-    if (calendlyRef.current) {
-      calendlyRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
