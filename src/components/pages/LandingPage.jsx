@@ -2,11 +2,11 @@ import { useRef } from "react";
 
 import Slideshow from "../features/Slideshow";
 
-import s1i1 from "../../assets/landing-page/slideshow-1/s1i1.png";
-import s1i2 from "../../assets/landing-page/slideshow-1/s1i2.png";
-import s1i3 from "../../assets/landing-page/slideshow-1/s1i3.png";
-import s1i4 from "../../assets/landing-page/slideshow-1/s1i4.png";
-import s1i5 from "../../assets/landing-page/slideshow-1/s1i5.png";
+import s1i1 from "../../assets/landing-page/slideshow-1/s1i1.webp";
+import s1i2 from "../../assets/landing-page/slideshow-1/s1i2.webp";
+import s1i3 from "../../assets/landing-page/slideshow-1/s1i3.webp";
+import s1i4 from "../../assets/landing-page/slideshow-1/s1i4.webp";
+import s1i5 from "../../assets/landing-page/slideshow-1/s1i5.webp";
 import s2i1 from "../../assets/landing-page/slideshow-2/s2i1.png";
 import s2i2 from "../../assets/landing-page/slideshow-2/s2i2.png";
 import s2i3 from "../../assets/landing-page/slideshow-2/s2i3.png";
