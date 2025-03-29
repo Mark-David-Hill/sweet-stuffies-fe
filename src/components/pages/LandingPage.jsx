@@ -42,9 +42,6 @@ function LandingPage() {
           </div>
         </div>
         <div className="slideshow-1-wrapper">
-          {/* <img src={s1i1} alt="" />
-          <img src={s1i5} alt="" />
-          <img src={s1i6} alt="" /> */}
           <Slideshow images={[s1i1, s1i2, s1i3, s1i4, s1i5]} />
         </div>
         <div className="contact-button-wrapper" onClick={scrollToCalendly}>
@@ -94,6 +91,70 @@ function LandingPage() {
             </button>
           </div>
         </div>
+
+        <div className="about-section">
+          <h2> About Me</h2>
+          <p>
+            My name is Krystal Hill and I’m the creative mind behind Sweet
+            Stuffies. I have always loved making toys. While my sisters were
+            using their sewing skills to sew amazing things like prom dresses
+            and dance costumes, I was sewing felt food and sock animals. Even as
+            I grew up, those around me went into serious professions like
+            doctors, nurses, and businesspeople. I moved to Japan with my
+            husband and became a kindergarten teacher. I loved playing with the
+            kids every day and seeing how quickly they learned and grew. I loved
+            coming up with new games for us to play together and seeing how they
+            interacted with the toys they had in the classroom.
+          </p>
+          <p>
+            I noticed that children tended to have few toys because of the small
+            spaces of Japanese homes. But the toys they had, they treasured.
+            Toys were more expensive, but they were also of higher quality with
+            cute details and super soft fabric.
+          </p>
+          <p>
+            After 7 amazing years in Japan, I started to experience strange
+            symptoms that affected my ability to teach. I went to the doctor
+            and, after a barrage of tests, I was diagnosed with M.S. I moved
+            back to the U.S. and the support of my family.
+          </p>
+          <p>
+            {" "}
+            Going through the M.S. diagnoses was hard. I went from teaching and
+            playing every day to being unable to teach at all. I tried to be a
+            substitute teacher, but the exertion was too much for my body to
+            handle consistently and I had to quit. I went from being the sole
+            breadwinner in our house, to being barely able to be helpful at all.
+            Even simple things were hard, like taking our dog outside to go to
+            the bathroom.
+          </p>
+          <p>
+            With lots of mental energy, but very little physical energy, my
+            creativity needed an outlet. I decided to make stuffies. I
+            researched online and found an incredibly soft fabric that when
+            matched with an unbelievably soft stuffing was heavenly. I also was
+            surprised to find that, even in my worst M.S. days, I could still
+            sew reliably. It was invigorating and I loved it. Imagine my
+            surprise when a friend came over, admired one of my stuffies, and
+            asked if I could make one for each of her kids!
+          </p>
+          <p>
+            So I did! Since then, people have been asking me to make some for
+            their children as well. I love it. I love seeing kids loving on
+            their special stuffie that was made just for them, ordered by
+            someone who knows and loves them. I love seeing them choose the
+            scent that they want and the fabric color that their child will just
+            LOVE.{" "}
+          </p>
+          <p>
+            <b>
+              This is the best job in the world. And I am honored to be able to
+              make a special, one-of-a-kind stuffie for your special,
+              one-of-a-kind child.
+            </b>
+          </p>
+        </div>
+
         <div className="calendly-wrapper" ref={calendlyRef}>
           <div
             id="calendly"
@@ -107,6 +168,7 @@ function LandingPage() {
             async
           ></script>
         </div>
+
         <div className="end-section">
           <h2>Questions? Concerns? Contact me at:</h2>
           <a href="sweet.stuffies.em@gmail.com">sweet.stuffies.em@gmail.com</a>

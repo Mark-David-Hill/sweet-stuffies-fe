@@ -183,7 +183,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 5%;
+      padding-bottom: 5%;
 
       h2 {
         font-size: 30px;
@@ -195,13 +195,25 @@
       }
     }
   }
+
+  .about-section {
+    padding: 0 6%;
+
+    h2,
+    p {
+      margin: 2%;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 1140px) {
   .landing-page-container {
     main {
       .end-section {
-        // padding: 10%;
         padding-bottom: 5%;
 
         h2 {
