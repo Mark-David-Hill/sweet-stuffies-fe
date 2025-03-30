@@ -10,7 +10,6 @@ function Slideshow({ images }) {
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
-    seconds;
 
     return () => clearInterval(interval);
   }, [currentIndex, isPaused]);
