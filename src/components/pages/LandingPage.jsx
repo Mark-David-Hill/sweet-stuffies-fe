@@ -32,7 +32,7 @@ function LandingPage() {
       <div className="heading-section-container">
         <div className="heading-overlay">
           <div className="image-heading-wrapper">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Sweet Stuffies Logo" />
 
             <div className="heading-wrapper">
               <h1>Sweet Stuffies</h1>
