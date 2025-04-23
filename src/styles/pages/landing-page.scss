@@ -445,8 +445,9 @@
       }
 
       .links-wrapper {
-        bottom: 100px;
-        left: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
       }
     }
   }
