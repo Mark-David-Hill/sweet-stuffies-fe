@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { FaInstagram } from "react-icons/fa";
 
 import Slideshow from "../features/Slideshow";
 
@@ -41,9 +42,19 @@ function LandingPage() {
             </div>
           </div>
         </div>
+        <div className="links-wrapper">
+          <a
+            href="https://www.instagram.com/sweetstuffies.em?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+          >
+            <FaInstagram />
+          </a>
+        </div>
+
         <div className="slideshow-1-wrapper">
           <Slideshow images={[s1i1, s1i2, s1i3, s1i4, s1i5]} />
         </div>
+
         <div className="contact-button-wrapper" onClick={scrollToCalendly}>
           <button>Book Your Free Design Consult With Me Today!</button>
         </div>
